@@ -8,11 +8,14 @@ A Groq Cloud foi escolhida por sua capacidade de lidar com cargas de trabalho co
 ## Libs necessárias?
 Para executar o projeto é necessário a instalação do [**python**](https://www.python.org/downloads/) e das seguintes bibliotecas:
 
-```pip install langchain==0.3.0```
-```pip install langchain-groq==0.2.0```
-```pip install langchain-community==0.3.0```
-```pip install python-dotenv```
-```pip install beatuifullsoup4```
+```
+pip install \
+    langchain==0.3.0 \
+    langchain-groq==0.2.0 \
+    langchain-community==0.3.0 \
+    python-dotenv \
+    beautifulsoup4
+```
 
 ## Groq Cloud
 
