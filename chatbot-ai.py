@@ -19,15 +19,15 @@ def bot_response(message_list):
   return chain.invoke({}).content
 
 print('Bem-vindo ao ChatBot OsvalBot! (Digite x se você quiser sair!)\n')
-mensagens = []
+messages = []
 
 while True:
   question = input('Usuário: ')
   if question.lower() == 'x':
     break
-  mensagens.append(('user', question))
-  response = bot_response(mensagens)
-  mensagens.append(('assistant', response))
+  messages.append(('user', question))
+  response = bot_response(messages)
+  messages.append(('assistant', response))
   print(f'Bot: {response}')
 
 print('\nMuito obrigado por utilizar o OsvalBot!')
