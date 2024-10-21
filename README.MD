@@ -17,6 +17,10 @@ pip install \
     beautifulsoup4
 ```
 
+```pip install pypdf==5.0.0```
+```pip install youtube_transcript_api==0.6.2```
+
+
 ## Groq Cloud
 
 A Groq Cloud é uma plataforma de computação em nuvem desenvolvida pela Groq, uma empresa focada em inteligência artificial (IA) e machine learning (ML). A Groq Cloud oferece poder de processamento otimizado para tarefas de IA e ML, utilizando os TPUs (Tensor Processing Units) desenvolvidos pela Groq, que são projetados para entregar desempenho extremo em operações de aprendizado de máquina. A ideia é facilitar a execução de cargas de trabalho intensivas em IA, com maior eficiência e rapidez.
