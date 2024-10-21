@@ -18,20 +18,20 @@ urls = [
 
 for url in urls:
     loader = WebBaseLoader(url)
-    lista_documentos = loader.load()
+    document_list = loader.load()
 
 template = ChatPromptTemplate.from_messages([
     ('system', 'Você é um assistente amigável chamado OsvalBot e tem acesso as seguinte informações para dar as suas respostas: {documentos_informados}'),
     ('user', '{input}')
 ])
 
-documento = ''
-for doc in lista_documentos:
-  documento = documento + doc.page_content
+document= ''
+for doc in document_list:
+  document = document + doc.page_content
 
 chain = template | chat
-resposta = chain.invoke({'documentos_informados': documento, 'input': 'Quais as formações de treinamentos disponíveisna TargetTrust?'})
-print(resposta.content)
+answer = chain.invoke({'documentos_informados': document, 'input': 'Quais as formações de treinamentos disponíveisna TargetTrust?'})
+print(answer.content)
 
-resposta = chain.invoke({'documentos_informados': documento, 'input': 'Quais as os módulos dos treinamentos envolvendo teste de software?'})
-print(resposta.content)
+answer = chain.invoke({'documentos_informados': document, 'input': 'Quais as os módulos dos treinamentos envolvendo teste de software?'})
+print(answer.content)
