@@ -32,5 +32,3 @@ print(response.content)
 
 response = chain_youtube.invoke({'informacoes': document, 'input': 'Quanto tempo para se preparar para uma maratona considerando que já corro 10 km?'})
 print(response.content)
-
-
