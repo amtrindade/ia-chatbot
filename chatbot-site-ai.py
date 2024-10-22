@@ -20,14 +20,14 @@ for url in urls:
     loader = WebBaseLoader(url)
     document_list = loader.load()
 
+document= ''
+for doc in document_list:
+  document = document + doc.page_content
+
 template = ChatPromptTemplate.from_messages([
     ('system', 'Você é um assistente amigável chamado OsvalBot e tem acesso as seguinte informações para dar as suas respostas: {documentos_informados}'),
     ('user', '{input}')
 ])
-
-document= ''
-for doc in document_list:
-  document = document + doc.page_content
 
 chain = template | chat
 answer = chain.invoke({'documentos_informados': document, 'input': 'Quais as formações de treinamentos disponíveisna TargetTrust?'})
