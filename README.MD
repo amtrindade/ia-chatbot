@@ -5,7 +5,7 @@ Este projeto é um Chatbot desenvolvido em Python, utilizando a infraestrutura d
 
 A Groq Cloud foi escolhida por sua capacidade de lidar com cargas de trabalho complexas, o que permite explorar diferentes modelos e aprimorar o chatbot de maneira mais eficaz. Ao longo do desenvolvimento, estarei testando, implementando e aprimorando modelos de IA para melhorar a capacidade de resposta e a fluidez das interações do chatbot.
 
-## Libs necessárias?
+## Libs necessárias:
 Para executar o projeto é necessário a instalação do [**python**](https://www.python.org/downloads/) e das seguintes bibliotecas:
 
 ```
